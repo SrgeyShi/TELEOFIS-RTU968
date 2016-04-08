@@ -1,5 +1,7 @@
 Внимание: 
 Данный SDK предназначен для OpenWRT Chaos Calmer.
+Перед использованием рекомендуется установить необходимые пакеты на Ваш компьютер:
+	sudo apt-get install subversion git g++ libncurses5-dev zlib1g-dev gawk libssl-dev unzip build-essential
 
 Пример сборки сервисного демона Helloworld и вызываемой пользователем программы helloworld_oneshot:
 1. Скачайте архив с SDK OpenWrt-SDK-mxs_gcc-4.8-linaro_uClibc-0.9.33.2_eabi.Linux-x86_64.tar.bz2
@@ -37,3 +39,9 @@
 	root@TELEOFIS-RTU968:/# etc/init.d/helloworld stop
 
 --- При перезагрузке все остается на своих местах
+
+*** Устранение неполадок ***
+Как правило, большинство проблем при сборке(чего-то не хватает, не видятся новые пакеты и т.д.)
+обусловлены либо ошибками в коде, либо отсутствием необходимых пакетов на Вашем ПК(например, с Убунту)
+При возникновении проблем попробуйте:
+	make distclean && make menuconfig
