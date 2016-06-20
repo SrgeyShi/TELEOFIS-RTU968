@@ -20,7 +20,7 @@
 9. Готовый к установке пакет helloworld_123-321_mxs.ipk лежит в директории:
 	/bin/mxs/packages/base
 10.Копируем наш пакет на устройство с OpenWRT, например, через SCP:
-	scp helloworld_123-321_mxs.ipk root@192.168.88.1:/tmp/
+	scp bin/mxs/packages/base/helloworld_123-321_mxs.ipk root@192.168.88.1:/tmp/
 11.На устройстве с OpenWRT устанавливаем наш пакет:
 	root@TELEOFIS-RTU968:/# opkg install /tmp/helloworld_123-321_mxs.ipk
 12.Пробуем:
