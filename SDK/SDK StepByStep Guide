@@ -3,6 +3,8 @@
 Перед использованием рекомендуется установить необходимые пакеты на Ваш компьютер:
 	sudo apt-get install subversion git g++ libncurses5-dev zlib1g-dev gawk libssl-dev unzip build-essential
 
+Обратите внимание, что рекомендуется версия g++ 5.4.0 и ниже. Сборка кросс-компилятора с другими версиями не гарантируется.
+
 Пример сборки сервисного демона Helloworld и вызываемой пользователем программы helloworld_oneshot:
 1. Скачайте архив с SDK OpenWrt-SDK-mxs_gcc-4.8-linaro_uClibc-0.9.33.2_eabi.Linux-x86_64.tar.bz2
 2. Распакуйте архив командой
