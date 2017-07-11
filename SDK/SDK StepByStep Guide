@@ -1,5 +1,6 @@
 Внимание: 
 Данный SDK предназначен для OpenWRT Chaos Calmer.
+Корректная сборка возможна на операционной системе 64 битной архитектуры.
 Перед использованием рекомендуется установить необходимые пакеты на Ваш компьютер:
 	sudo apt-get install subversion git g++ libncurses5-dev zlib1g-dev gawk libssl-dev unzip build-essential
 
